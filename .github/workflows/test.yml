@@ -1,4 +1,4 @@
-name: Java Gradle
+name: Secondary
 
 on:
   workflow_dispatch:
