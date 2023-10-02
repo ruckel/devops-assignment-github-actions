@@ -4,8 +4,8 @@ name: Main
 on:
   workflow_dispatch:
   push:
-    branches:
-      - semi-main
+#    branches:
+#      - semi-main
 
 # Defines two custom environment variables for the workflow. These are used for the Container registry domain, and a name for the Docker image that this workflow builds.
 env:
@@ -32,7 +32,7 @@ jobs:
           java-version: 17
           distribution: 'temurin'
 
-      # Build with gradle and test code.
+      # Build with gradle and run code test.
       - name: Grant execute permission for gradlew
         run: chmod +x ./gradlew
       - name: Build with Gradle
