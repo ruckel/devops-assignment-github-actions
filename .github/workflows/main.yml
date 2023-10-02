@@ -1,5 +1,5 @@
 #
-name: Create and publish a Docker image
+name: Main
 
 # Configures this workflow to when called on.
 on: workflow_dispatch
@@ -21,6 +21,22 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      # Sets up java
+      - name: Set up JDK 11
+        uses: actions/setup-java@v3
+        with:
+          java-version: 11
+      # Build with gradle and test code.
+      - name: Build with gradle and test code.
+          run: chmod +x ./gradew
+          run: ./gradlw build
+          run: ./gradlew test
+    
+       - name: Upload test results
+        uses: actions/upload-artifact@v2
+          with:
+            name: test-results
+            path: build/test-results
       # Uses the `docker/login-action` action to log in to the Container registry registry using the account and password that will publish the packages. Once published, the packages are scoped to the account defined here.
       - name: Log in to the Container registry
         uses: docker/login-action@65b78e6e13532edd9afa3aa52ac7964289d1a9c1
@@ -49,3 +65,4 @@ jobs:
             user/app:latest
             user/app:1.0.0 
             ${{ steps.meta.outputs.labels }}
+
