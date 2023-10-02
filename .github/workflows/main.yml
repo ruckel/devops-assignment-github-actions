@@ -45,4 +45,7 @@ jobs:
           context: .
           push: true
           tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          labels: |
+            user/app:latest
+            user/app:1.0.0 
+            ${{ steps.meta.outputs.labels }}
