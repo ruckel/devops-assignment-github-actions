@@ -1,11 +1,11 @@
 name: test.yml
 
 on:
-#  workflow_dispatch:
-  push:
-    branches: [ "semi-main" ]
-  pull_request:
-    branches: [ "semi-main" ]
+  workflow_dispatch:
+#  push:
+#    branches: [ "semi-main" ]
+#  pull_request:
+#    branches: [ "semi-main" ]
 
 
 jobs:
