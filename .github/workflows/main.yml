@@ -1,8 +1,9 @@
 #
 name: Main
 
-# Configures this workflow to when called on.
+# Configures this workflow to when called on or when pushed to specified branch.
 on:
+  workflow_dispatch:
   push:
     branches:
       - semi-main
