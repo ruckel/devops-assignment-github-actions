@@ -27,10 +27,14 @@ jobs:
         with:
           java-version: 11
       # Build with gradle and test code.
-      - name: Build with gradle and test code.
-          run: chmod +x ./gradew
-          run: ./gradlw build
-          run: ./gradlew test
+    - name: Grant execute permission for gradlew
+      run: chmod +x ./gradlew
+
+    - name: Build with Gradle
+      run: ./gradlew build
+
+    - name: Run tests
+      run: ./gradlew test
     
        - name: Upload test results
         uses: actions/upload-artifact@v2
