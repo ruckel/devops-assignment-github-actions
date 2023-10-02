@@ -1,4 +1,4 @@
-name: Secondary
+name: test.yml
 
 on:
   workflow_dispatch:

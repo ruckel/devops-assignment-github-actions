@@ -1,5 +1,5 @@
 #
-name: Main
+name: main-yml
 
 # Configures this workflow to when called on or when pushed to specified branch.
 on:
