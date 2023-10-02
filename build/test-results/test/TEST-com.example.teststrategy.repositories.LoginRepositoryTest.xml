@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.teststrategy.repositories.LoginRepositoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-02T12:04:42" hostname="pop-os-burk" time="0.025">
+  <properties/>
+  <testcase name="testsIfEmailExistsInDatabase()" classname="com.example.teststrategy.repositories.LoginRepositoryTest" time="0.025"/>
+  <system-out><![CDATA[2023-10-02T14:04:41.978+02:00  INFO 270332 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.teststrategy.repositories.LoginRepositoryTest]: LoginRepositoryTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-10-02T14:04:41.983+02:00  INFO 270332 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.teststrategy.TestStrategyApplication for test class com.example.teststrategy.repositories.LoginRepositoryTest
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

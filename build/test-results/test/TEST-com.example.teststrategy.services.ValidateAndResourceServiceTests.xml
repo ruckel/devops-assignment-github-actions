@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.teststrategy.services.ValidateAndResourceServiceTests" tests="8" skipped="0" failures="0" errors="0" timestamp="2023-10-02T12:04:42" hostname="pop-os-burk" time="0.227">
+  <properties/>
+  <testcase name="testAuthenticateWithInvalidCredentials()" classname="com.example.teststrategy.services.ValidateAndResourceServiceTests" time="0.019"/>
+  <testcase name="register()" classname="com.example.teststrategy.services.ValidateAndResourceServiceTests" time="0.101"/>
+  <testcase name="login()" classname="com.example.teststrategy.services.ValidateAndResourceServiceTests" time="0.005"/>
+  <testcase name="testToGetBalanceOfUser()" classname="com.example.teststrategy.services.ValidateAndResourceServiceTests" time="0.004"/>
+  <testcase name="balanceExistByUserId()" classname="com.example.teststrategy.services.ValidateAndResourceServiceTests" time="0.004"/>
+  <testcase name="testToUpdateBalance()" classname="com.example.teststrategy.services.ValidateAndResourceServiceTests" time="0.005"/>
+  <testcase name="testAuthenticateWithValidCredentials()" classname="com.example.teststrategy.services.ValidateAndResourceServiceTests" time="0.062"/>
+  <testcase name="validateNewUser()" classname="com.example.teststrategy.services.ValidateAndResourceServiceTests" time="0.004"/>
+  <system-out><![CDATA[2023-10-02T14:04:42.246+02:00  INFO 270332 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.example.teststrategy.services.ValidateAndResourceServiceTests]: ValidateAndResourceServiceTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2023-10-02T14:04:42.260+02:00  INFO 270332 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.example.teststrategy.TestStrategyApplication for test class com.example.teststrategy.services.ValidateAndResourceServiceTests
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
